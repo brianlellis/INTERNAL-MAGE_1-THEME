@@ -1,0 +1,86 @@
+.seen-logos {
+    margin: 30px auto; 
+
+    @include bp(max-width, $bp-small) { display: none; }
+}
+.block-subscribe {
+    margin: 0 auto;
+    padding: 0 30px;
+    background: $c-purple2;
+    height: 110px;
+    @include bp(max-width, $bp-large) { height: 90px } 
+    @include bp(max-width, $bp-small) { height: 140px } 
+    .inner-box {
+        max-width: 1336px;
+        margin: 0 auto;
+
+        @include bp(max-width, $bp-small) { text-align: center; }
+
+        .block-title,
+        form,
+        form .actions { display: inline-block; margin: 0; }
+
+        form .input-box { 
+            float: left; 
+            padding: 0; 
+            line-height: 104px; 
+            @include bp(max-width, $bp-large) { line-height: 68px; }
+
+            input { 
+                width: 300px; 
+                @include bp(max-width, $bp-medium)   { width: 220px; }
+                @include bp(max-width, $bp-small)    { width: 260px; }
+                @include bp(max-width, $bp-xxs)      { width: 200px; }
+                @include bp(max-width, $bp-portrait) { width: 160px; }
+            } 
+        }
+
+        form { 
+            float: right;
+            @include bp(max-width, $bp-large) { margin-top: 8px; } 
+            @include bp(max-width, $bp-small) { float: none; } 
+        }
+
+        .block-title { 
+            font-family: sans-serif;
+            font-weight: 300;
+            font-size: 48px; 
+            color: $c-text-white; 
+            line-height: 95px; 
+            float: left; 
+            border: none;
+
+            @include bp(max-width, $bp-xlarge)   { font-size: 38px; }
+            @include bp(max-width, $bp-large)    { font-size: 28px; line-height: 68px; float: none; }
+            @include bp(max-width, $bp-medium)   { font-size: 26px; }
+            @include bp(max-width, $bp-small)    { font-size: 32px; line-height: 40px }
+            @include bp(max-width, $bp-xxs)      { font-size: 26px }
+            @include bp(max-width, $bp-portrait) { font-size: 18px }
+        }
+
+        #newsletter,
+        .actions .button,
+        #newsletter::placeholder {
+            background: #b1a6d0;
+            color: $c-text-white;
+            height: 70px;
+            font-size: $f-size-xxxl;
+            font-family: sans-serif;
+            font-weight: 300;
+            border: none;
+            border-radius: 5px;
+            text-transform: lowercase;
+            @include bp(max-width, $bp-large)  { height: 40px } 
+            @include bp(max-width, $bp-medium) { font-size: $f-size-xxl; height: 35px; }
+        }
+
+        #newsletter { 
+            margin: 0 10px 0 0; 
+        }
+        .actions .button { 
+            margin-top: 15px; 
+            @include bp(max-width, $bp-large) { margin-top: 12px; } 
+            @include bp(max-width, $bp-small) { margin-top: 15px; } 
+        }
+    }
+}

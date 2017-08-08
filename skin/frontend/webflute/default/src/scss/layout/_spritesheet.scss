@@ -1,0 +1,53 @@
+.at-sprite,
+.email-icon {
+	background: url('../sprite_sheet.png') no-repeat 0 0;
+	width: 22px;
+	height: 21px;
+}
+.window-sprite,
+.compare-icon {
+	background: url('../sprite_sheet.png') no-repeat -23px 0;
+	width: 22px;
+	height: 21px;
+}
+.heart-sprite,
+.wishlist-icon {
+	background: url('../sprite_sheet.png') no-repeat -48px 0;
+	width: 22px;
+	height: 21px;
+}
+.d-arrow-sprite {
+	background: url('../sprite_sheet.png') no-repeat -71px 0;
+	width: 33px;
+	height: 32px;
+	display: inline-block;
+	float: left;
+	margin-right: 4px;
+}
+.u-arrow-sprite {
+	background: url('../sprite_sheet.png') no-repeat -106px 0;
+	width: 33px;
+	height: 32px;
+	display: inline-block;
+}
+.search-sprite,
+#search_mini_form .search-button:before {
+	background: url('../sprite_sheet.png') no-repeat -141px 0;
+	width: 31px;
+	height: 32px;
+}
+.cart-sprite,
+.skip-cart span.icon  {
+	background: url('../sprite_sheet.png') no-repeat -173px 0;
+	width: 32px;
+	height: 32px;
+	opacity: 1;
+}
+
+.compare-icon,
+.wishlist-icon,
+.email-icon { 
+	display: inline-block;
+	float: left;
+    margin-right: 9px;
+}

@@ -1,0 +1,18 @@
+.flexslider.flexvertical {
+  margin: 0;
+  width: 70px;
+  .flex-viewport { height: 372px !important; }
+  li { width: 100% !important; }
+
+  .flex-direction-nav .flex-next,
+  .flex-direction-nav .flex-prev, {
+    opacity: 1;
+    right: 10px;
+    bottom: 0;
+    top: initial;
+  }
+  .flex-direction-nav .flex-prev {
+    right: initial;
+    left: -20px;
+  }
+}
