@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<action method="addLink" translate="label" module="customer"><name>logout</name><path>customer/account/logout/</path><label>Log out</label></action>
